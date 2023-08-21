@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text">
+        <item name="android:textColor">@color/gray_primary</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+    </style>
+
+    <style name="Text.Title">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Text.Subtitle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Normal">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Normal.Secondary">
+        <item name="android:textColor">@color/gray_secondary</item>
+    </style>
+
+    <style name="Text.Hint">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.OnButton">
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Text.OnCard">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DefaultFloatingActionButtonThemeStyle">
+        <item name="colorContainer">@color/blue_primary</item>
+        <item name="colorOnContainer">@color/white</item>
+    </style>
+
+    <style name="DefaultFloatingActionButtonShapeStyle">
+        <item name="cornerSize">100%</item>
+    </style>
+
+    <style name="FloatingActionButtonStyle" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="materialThemeOverlay">@style/DefaultFloatingActionButtonThemeStyle</item>
+        <item name="shapeAppearanceOverlay">@style/DefaultFloatingActionButtonShapeStyle</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">56dp</item>
+        <item name="boxCornerRadiusTopEnd">56dp</item>
+        <item name="boxCornerRadiusBottomStart">56dp</item>
+        <item name="boxCornerRadiusBottomEnd">56dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="helperTextTextAppearance">@style/Text.Hint</item>
+        <item name="helperTextTextColor">@color/gray_secondary</item>
+        <item name="hintTextAppearance">@style/Text.Hint</item>
+        <item name="hintTextColor">@color/gray_secondary</item>
+        <item name="placeholderTextAppearance">@style/Text.Normal</item>
+        <item name="errorTextAppearance">@style/Text.Hint</item>
+    </style>
+
+</resources>

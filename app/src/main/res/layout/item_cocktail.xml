@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_cocktail_height"
+    android:layout_margin="@dimen/margin_4"
+    app:cardCornerRadius="@dimen/default_card_view_corner_radius">
+
+    <ImageView
+        android:id="@+id/cocktail_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/cocktail_placeholder"/>
+
+    <TextView
+        style="@style/Text.OnCard"
+        android:id="@+id/cocktail_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:textColor="@color/white"
+        tools:text="Pink Lemonade" />
+
+</com.google.android.material.card.MaterialCardView>

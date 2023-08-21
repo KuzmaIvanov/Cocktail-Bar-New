@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/padding_24">
+
+    <Button
+        android:id="@+id/pick_photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.OnButton"
+        android:text="@string/pick_photo_button_text"/>
+
+    <Button
+        android:id="@+id/delete_photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.OnButton"
+        android:text="@string/delete_photo_button_text"/>
+
+</LinearLayout>

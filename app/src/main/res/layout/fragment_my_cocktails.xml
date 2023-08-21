@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/start_image_view"
+        android:layout_width="@dimen/start_image_view"
+        android:layout_height="@dimen/start_image_view"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_32"
+        android:contentDescription="@string/start_image_cont_desc"
+        android:src="@drawable/summer_holidays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/my_cocktails_text_view"
+        style="@style/Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/my_cocktails_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_image_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_cocktails_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_cocktails_text_view"
+        app:spanCount="2" />
+
+    <TextView
+        android:id="@+id/add_your_first_cocktail_text_view"
+        style="@style/Text.Normal.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add_your_first_cocktail_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/arrow_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrow_image_view"
+        android:layout_width="@dimen/arrow_image_view_width"
+        android:layout_height="@dimen/arrow_image_view_height"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toTopOf="@+id/create_cocktail_fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_cocktail_fab"
+        style="@style/FloatingActionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:contentDescription="@string/create_cocktail_fab_cont_desc"
+        android:src="@drawable/baseline_add_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/share_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:src="@drawable/outline_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/no_cocktails_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="start_image_view, add_your_first_cocktail_text_view, arrow_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
